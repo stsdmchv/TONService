@@ -10,4 +10,4 @@ ExecStart=/hive/miners/custom/downloads/tonlib-opencl-cli -v 3 -C global.config.
 
 [Install]
 WantedBy=multi-user.target
-Alias=amd-miner-2.service
+Alias=ton-amd-2.service

@@ -10,4 +10,4 @@ ExecStart=/hive/miners/custom/downloads/tonlib-cuda-cli -v 3 -C global.config.js
 
 [Install]
 WantedBy=multi-user.target
-Alias=nvidia-miner-1.service
+Alias=ton-nv-1.service
