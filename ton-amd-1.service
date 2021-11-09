@@ -1,0 +1,13 @@
+[Unit]
+Description=TON miner service AMD-1
+After=network.target
+
+[Service]
+RestartSec=5
+Restart=always
+WorkingDirectory=/hive/miners/custom/downloads
+ExecStart=/hive/miners/custom/downloads/tonlib-opencl-cli -v 3 -C global.config.json -e 'pminer start kf9iWhwk9GwAXjtwKG-vN7rmXT3hLIT23RBY6KhVaynRrIK7 EQDGXA2Iuq90ia8qxczGL70l6jD1ZPVTbNnCxXFZd7zAuh91 0 32 0'
+
+[Install]
+WantedBy=multi-user.target
+Alias=amd-miner-1.service
